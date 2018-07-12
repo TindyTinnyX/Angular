@@ -1,9 +1,12 @@
-SystemJS.config({
+System.config({
     transpiler: "typescript",
-    typescriptOptions: { emitDecoratorMetadata: true },
+    typescriptOptions: {
+        "experimentalDecorators": true,
+    },
     map: {
         '@angular': 'node_modules/@angular',
         'rxjs': 'node_modules/rxjs'
+        // 'typescript': 'node_modules/typescript/lib/typescript.js'
     },
     paths: {
         'node_modules/@angular/*': 'node_modules/@angular/*/bundles'
